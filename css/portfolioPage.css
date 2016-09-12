@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CSS-стили для меню иконок - Портфолио */
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../font_for_portfolio_view/own_view_icon.eot?jbpxrk');
+    src:  url('../font_for_portfolio_view/own_view_icon.eot?jbpxrk#iefix') format('embedded-opentype'),
+    url('../font_for_portfolio_view/own_view_icon.ttf?jbpxrk') format('truetype'),
+    url('../font_for_portfolio_view/own_view_icon.woff?jbpxrk') format('woff'),
+    url('../font_for_portfolio_view/own_view_icon.svg?jbpxrk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-view_grid:before {
+    content: "\e901";
+    margin-left: 16px;
+}
+.icon-view_inline:before {
+    content: "\e900";
+    margin-left: 16px;
+}
+.icon-arrow:before {
+    content: "\ea34";
+}
+
+
+
+
+
+/* CSS-стили для контента страницы - Портфолио */
+
+.top_block_town_background{
+    background: url("../img/main_img_city.jpg");
+    height: 295px;
+    background-size: cover;
+    text-align: center;
+
+}
+.portfolio_text{
+    font-family: bebas_neue_regularregular, sans-serif;;
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 115px;
+}
+
+.main_wrap{
+    width: 1020px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title_page_text{
+    font-family: bebas_neue_regularregular, sans-serif;;
+    font-weight: 600;
+    color: #2190c1;
+    padding: 0;
+    margin: 35px 0 35px 0;
+}
+
+/* Стили для меню-навигации портолио */
+
+.block_top_bottom_borders {
+    border-top: 1px solid #b3d5e4;
+    border-bottom: 1px solid #b3d5e4;
+
+
+}
+.border_left_right{
+    border-left: 1px solid #b3d5e4;
+    border-right: 1px solid #b3d5e4;
+    padding: 17px 0;
+
+}
+
+
+
+.list_menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.link_menu{
+    float: left;
+}
+
+.a_link_style {
+    display: block;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: ubuntu_condensedregular, sans-serif;
+    font-size: 15px;
+
+    color: #515862;
+    border-right: 1px solid #c3c4c4;
+
+    padding: 0 35px;
+}
+
+/* Стили для выпадающего меню */
+
+.list_menu ul{
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 35px;
+}
+
+.list_menu ul li {
+    float: none;
+}
+
+.list_menu li:hover > ul {
+    display: block;
+    background: #f98561;
+    width: 174px;
+}
+
+.input_radio_drop_menu {
+    float: right;
+    padding: 10px;
+
+}
+.bor_bott{
+    border-bottom: 1px solid white;
+    text-align: left;
+    margin: 10px 10px 0 10px;
+    padding-bottom: 10px;
+}
+.bor_bott_none_mod{
+    border: none;
+}
+
+.label_style{
+    margin-left: 10px;
+    font-family: ubuntu_condensedregular, sans-serif;
+    font-size: medium;
+    color: white;
+}
+
+
+.backgr:hover {
+    background: #000;
+}
+
+.border-right_none_mod{
+    border: none;
+}
+
+.without_border_mod {
+    display: inline-block;
+
+    padding: 17px;
+
+    border: none;
+    color: #c5f0ff;
+    width: 140px;
+
+    background-color: #2190c1;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.arrow{
+    display: inline-block;
+    background-image: url("../img/rotate_arrow.png");
+    height: 13px;
+    width: 15px;
+
+    margin-left: 10px;
+
+    transition: .5s all;
+}
+
+.a_link_style:hover{
+    color: #2190c1;
+}
+
+.without_border_mod:hover{
+    background-color: #2190c1;
+    color: #c5f0ff;
+
+}
+.without_border_mod:hover .arrow{
+    transform: rotate(90deg);
+}
+
+.view_switch{
+    text-decoration: none;
+    color: #515862;
+    font-size: 16px;
+}
+.view_switch:hover{
+    color: #2190c1;
+}
+
+
+
+
+
+/* Стили для галереи*/
+.pics_container_for_gallery > a{
+    margin: 20px;
+}
+
+.gallery_pic1{
+    display: inline-block;
+    background-image: url("../img/pic_category_with_camera.jpg");
+    height: 206px;
+    width: 273px;
+
+
+    transition: .2s;
+
+    cursor: pointer;
+}
+
+.gallery_pic1:hover{
+    background-image: url("../img/pic_category_details.jpg");
+}
+/* Далее только увеличить ассортимент картинок, стили описания следующие...
+
+.gallery_pic N{
+    background-image: url("../img/n.jpg");
+}
+.gallery_pic N:hover{
+    background-image: url("../img/n.jpg");
+}
+
+*/
+
+/* Стили для блока клиентов */
+.title_clients_text{
+    font-family: bebasregular, sans-serif;
+    font-size: 27px;
+    font-weight: 300;
+    color: #2190c1;
+    margin-top: 20px;
+}
+
+
+.client_first{
+    display: inline-block;
+    background-image: url("../img/blueway_client.png");
+    height: 19px;
+    width: 79px;
+    vertical-align: middle;
+    margin-right: 55px;
+}
+.clients_second{
+    display: inline-block;
+    background-image: url("../img/theme_client.png");
+    height: 20px;
+    width: 101px;
+    vertical-align: middle;
+    margin-right: 55px;
+}
+.clients_third{
+    display: inline-block;
+    background-image: url("../img/template_client.png");
+    height: 25px;
+    width: 101px;
+    vertical-align: middle;
+    margin-right: 55px;
+}
+.clients_forth{
+    display: inline-block;
+    background-image: url("../img/stockmarket_client.png");
+    height: 16px;
+    width: 100px;
+    vertical-align: middle;
+    margin-right: 55px;
+}
+.clients_fifth{
+    display: inline-block;
+    background-image: url("../img/loremispum_client.png");
+    height: 27px;
+    width: 130px;
+    vertical-align: middle;
+    margin-right: 55px;
+}
+.clients_sixth{
+    display: inline-block;
+    background-image: url("../img/seyyahil.png");
+    height: 21px;
+    width: 90px;
+    vertical-align: middle;
+}
+
+.margin_contain{
+    margin: 37px 0 37px 0;
+}
+
+
+
+
+
+
+
+
+/*TEST*/
