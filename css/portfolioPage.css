@@ -34,11 +34,11 @@
 
 .icon-view_grid:before {
     content: "\e901";
-    margin-left: 16px;
+    margin-left: 10px;;
 }
 .icon-view_inline:before {
     content: "\e900";
-    margin-left: 16px;
+    margin-left: -35px;;
 }
 .icon-arrow:before {
     content: "\ea34";
@@ -63,7 +63,7 @@
     font-weight: 600;
     text-transform: uppercase;
     color: white;
-    padding-top: 115px;
+    padding-top: 110px;
 }
 
 .main_wrap{
@@ -77,7 +77,7 @@
     font-weight: 600;
     color: #2190c1;
     padding: 0;
-    margin: 35px 0 35px 0;
+    margin: 22px 0 25px 0;
 }
 
 /* Стили для меню-навигации портолио */
@@ -91,7 +91,7 @@
 .border_left_right{
     border-left: 1px solid #b3d5e4;
     border-right: 1px solid #b3d5e4;
-    padding: 17px 0;
+    height: 53px;
 
 }
 
@@ -104,6 +104,10 @@
 }
 .link_menu{
     float: left;
+    padding: 17px 0;
+}
+.link_menu_padding_none_mod{
+    padding: 0;
 }
 
 .a_link_style {
@@ -120,22 +124,23 @@
     padding: 0 35px;
 }
 
+
 /* Стили для выпадающего меню */
 
-.list_menu ul{
+.links_container_drop-menu{
     display: none;
     position: absolute;
     list-style: none;
     padding: 0;
     overflow: hidden;
-    margin-left: 35px;
+    margin-left: 57px;
 }
 
-.list_menu ul li {
+.links_container_drop-menu .select_link {
     float: none;
 }
 
-.list_menu li:hover > ul {
+.list_menu li:hover > .links_container_drop-menu {
     display: block;
     background: #f98561;
     width: 174px;
@@ -144,6 +149,7 @@
 .input_radio_drop_menu {
     float: right;
     padding: 10px;
+    cursor: pointer;
 
 }
 .bor_bott{
@@ -152,6 +158,9 @@
     margin: 10px 10px 0 10px;
     padding-bottom: 10px;
 }
+
+
+
 .bor_bott_none_mod{
     border: none;
 }
@@ -161,12 +170,13 @@
     font-family: ubuntu_condensedregular, sans-serif;
     font-size: medium;
     color: white;
+    cursor: pointer;
 }
-
 
 .backgr:hover {
     background: #000;
 }
+
 
 .border-right_none_mod{
     border: none;
@@ -182,6 +192,7 @@
     width: 140px;
 
     background-color: #2190c1;
+    margin-left: 57px;
 }
 
 .clearfix:after {
@@ -218,7 +229,7 @@
 .view_switch{
     text-decoration: none;
     color: #515862;
-    font-size: 16px;
+    font-size: 22px;
 }
 .view_switch:hover{
     color: #2190c1;
@@ -226,11 +237,20 @@
 
 
 
+.padding_for_switch_view{
+    padding: 17px 0;
+}
+
+
+
 
 
 /* Стили для галереи*/
+.pics_container_for_gallery{
+    margin-top: 17px;
+}
 .pics_container_for_gallery > a{
-    margin: 20px;
+    margin: 25px 17px;
 }
 
 .gallery_pic1{
@@ -265,7 +285,7 @@
     font-size: 27px;
     font-weight: 300;
     color: #2190c1;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 
@@ -318,7 +338,7 @@
 }
 
 .margin_contain{
-    margin: 37px 0 37px 0;
+    margin: 32px 0 30px 0;
 }
 
 
