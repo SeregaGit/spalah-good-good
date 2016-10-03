@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 
 
@@ -38,7 +39,7 @@
 }
 .icon-view_inline:before {
     content: "\e900";
-    margin-left: -35px;;
+    margin-left: -35px;
 }
 .icon-arrow:before {
     content: "\ea34";
@@ -56,6 +57,7 @@
     background-size: cover;
     text-align: center;
 
+
 }
 .portfolio_text{
     font-family: bebas_neue_regularregular, sans-serif;;
@@ -64,6 +66,7 @@
     text-transform: uppercase;
     color: white;
     padding-top: 110px;
+
 }
 
 .main_wrap{
@@ -82,7 +85,7 @@
 
 /* Стили для меню-навигации портолио */
 
-.block_top_bottom_borders {
+.block_bottom_border {
     border-top: 1px solid #b3d5e4;
     border-bottom: 1px solid #b3d5e4;
 
@@ -128,37 +131,54 @@
 /* Стили для выпадающего меню */
 
 .links_container_drop-menu{
+
     display: none;
     position: absolute;
     list-style: none;
     padding: 0;
-    overflow: hidden;
     margin-left: 57px;
+
+    z-index: 1;
+
 }
+
 
 .links_container_drop-menu .select_link {
     float: none;
+
 }
 
 .list_menu li:hover > .links_container_drop-menu {
     display: block;
     background: #f98561;
     width: 174px;
+    opacity: 1;
 }
 
+
+
 .input_radio_drop_menu {
+    display: none;
     float: right;
-    padding: 10px;
+    margin-top: 5px;
     cursor: pointer;
 
 }
+.list_menu:hover {
+    display: block;
+
+}
+
+
+
+
+
 .bor_bott{
     border-bottom: 1px solid white;
     text-align: left;
-    margin: 10px 10px 0 10px;
+    margin: 5px 10px 0 10px;
     padding-bottom: 10px;
 }
-
 
 
 .bor_bott_none_mod{
@@ -171,7 +191,42 @@
     font-size: medium;
     color: white;
     cursor: pointer;
+
 }
+
+/* Псевдоклассы для стилизации выбранных категорий в выпадающем меню */
+
+.label_style:before {
+    content: "";
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: white;
+    float: right;
+
+    border-radius: 6px;
+    margin-top: 5px;
+
+}
+
+input:checked + label:before {
+    content: "";
+    display: inline-block;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 6px;
+
+    background-color: #2190c1;
+}
+
+
+
+
+
 
 .backgr:hover {
     background: #000;
@@ -237,47 +292,101 @@
 
 
 
-.padding_for_switch_view{
+.view_switch_buttons {
     padding: 17px 0;
 }
 
+.view_tabs {
+    list-style: none;
+    display: inline-block;
+}
 
 
 
 
 /* Стили для галереи*/
-.pics_container_for_gallery{
-    margin-top: 17px;
-}
-.pics_container_for_gallery > a{
-    margin: 25px 17px;
-}
 
-.gallery_pic1{
+.block_holder {
+    position:relative;
+
     display: inline-block;
-    background-image: url("../img/pic_category_with_camera.jpg");
+
     height: 206px;
     width: 273px;
 
-
-    transition: .2s;
+    background-image: url("../img/pic_category_with_camera.jpg");
+    margin: 45px 15px 0px 20px;
 
     cursor: pointer;
+
+}
+.block_hover_show {
+    display:none;
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+
+    background: #aaaaaa;
+
+    padding: 5px;
+    color: white;
 }
 
-.gallery_pic1:hover{
-    background-image: url("../img/pic_category_details.jpg");
-}
-/* Далее только увеличить ассортимент картинок, стили описания следующие...
-
-.gallery_pic N{
-    background-image: url("../img/n.jpg");
-}
-.gallery_pic N:hover{
-    background-image: url("../img/n.jpg");
+.block_holder:hover .block_hover_show {
+    display:block;
 }
 
-*/
+.title_text_photo_h3 {
+    font-size: 20px;
+    font-family: bree_serifregular, sans-serif;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.text_info_p {
+    font-size: 11px;
+    font-family: ubunturegular, sans-serif;
+    margin: 20px 0 30px 0;
+}
+
+/* Стили для кнопки */
+
+.eye{
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 12px 30px 12px 60px;
+
+    text-decoration: none;
+
+    font-family: ubunturegular, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    
+    background-image: url("../img/eye_for_button.png");
+    background-repeat: no-repeat;
+    background-position: 10px;
+
+
+}
+
+.prev_next_button{
+    display: inline-block;
+
+    background-image: url("../img/prev_next_pic.png");
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 237px;
+
+    margin: 65px 0 55px 0;
+
+}
+
+
+
 
 /* Стили для блока клиентов */
 .title_clients_text{
@@ -349,3 +458,7 @@
 
 
 /*TEST*/
+
+
+
+

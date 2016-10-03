@@ -8,7 +8,7 @@ $( function() {
     });
 } );
 
-$('.pics_container_for_gallery').magnificPopup({
+$('#gallery').magnificPopup({
     delegate: 'a',
     type: 'image',
     tLoading: 'Loading image #%curr%...',
@@ -21,9 +21,10 @@ $('.pics_container_for_gallery').magnificPopup({
     image: {
         tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
         titleSrc: function(item) {
-            return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+            return item.el.attr('title') + '<small>by ...</small>';
         }
     }
 });
 
+$( ".view_switch_buttons" ).tabs();
 
